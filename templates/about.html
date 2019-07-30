@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>S.I.C</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ <style>
+  body {
+   font: 20px Montserrat, sans-serif;
+   line-height: 1.8;
+   color: black;
+ }
+ p {font-size: 16px;}
+ .margin {margin-bottom: 45px;}
+ .bg-1 {
+   background-color: #1abc9c; /* Green */
+   color: #ffffff;
+ }
+ .bg-2 {
+   background-color: #474e5d; /* Dark Blue */
+   color: #ffffff;
+ }
+ .bg-3 {
+   background-color: #ffffff; /* White */
+   color: #555555;
+ }
+ .bg-4 {
+   background-color: #2f2f2f; /* Black Gray */
+   color: #fff;
+ }
+ .container-fluid {
+   //padding-top: 70px;
+   //padding-bottom: 70px;
+ }
+ .navbar {
+   //padding-top: 15px;
+   //padding-bottom: 15px;
+   border: 0;
+   border-radius: 0;
+   margin-bottom: 0;
+   font-size: 12px;
+   letter-spacing: 5px;
+ }
+ .navbar-nav  li a:hover {
+   color: #1abc9c !important;
+ }
+
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">it's S.I.C</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="sic.html">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Stories</a></li>
+        <li><a href="#">Sources</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="#">make a profile</a></p>
+
+
+
+    </div>
+    <div class="col-sm-8 text-left">
+      <h1>The Creators</h1>
+      <!-- Third Container (Grid) -->
+    <div class="container-fluid bg-3 text-center">
+      <h3 class="margin">About us</h3><br>
+      <div class="row">
+        <div class="col-sm-4">
+          <p> Hello I am Nadia Ramirez. I am 17 and I live in Chicago.
+          </p>
+          <img src="file:///Users/student/Desktop/IMG_7982.jpg" class="img-responsive margin" style="width:70%" alt="Image">
+        </div>
+        <div class="col-sm-4">
+          <p>Gizlangba Gbor</p>
+          <img src="file:///Users/student/Desktop/IMG_3999.jpg" class="img-responsive margin" style="width:70%" alt="Image">
+        </div>
+        <div class="col-sm-4">
+          <p>Shannon</p>
+          <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>Topics</p>
+      </div>
+      <div class="well">
+        <p></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
