@@ -54,7 +54,7 @@
   </div>
   <p><span class="error">* required field</span></p>
 
-  <form method="post" action="post_dets.html">
+  <form method="post" action="post_dets.php">
     Title: <input type="text" name="Title" value="">
     <span class="error">* <?php echo $TitleErr;?></span>
     <br><br>
