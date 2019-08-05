@@ -8,17 +8,17 @@
 <body>
 <?php
 // define variables and set to empty values
-$nameErr = "";
-$name = "";
+$TitleErr = $commentErr= "";
+$Title = $comment= "";
 
 if ("profile.html"] == "POST") {
-  if (empty($_POST["name"])) {
-    $nameErr = "Name is required";
+  if (empty($_POST["Title"])) {
+    $TitleErr = "Title is required";
   } else {
-    $name = test_input($_POST["name"]);
+    $TitleErr = test_input($_POST["Title"]);
     // check if name only contains letters and whitespace
-    if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
-      $nameErr = "Only letters and white space allowed";
+    if (!preg_match("/^[a-zA-Z ]*$/",$Title)) {
+      $TitleErr = "Only letters and white space allowed";
     }
   }
 
@@ -37,11 +37,11 @@ function test_input($data) {
 }
 ?>
 
-<h2>PHP Form Validation Example</h2>
+<h2>Express yourself! Share your personal experiences.</h2>
 <p><span class="error">* required field</span></p>
 <form method="post" action="profile.html">
-  Name: <input type="text" name="name" value="">
-  <span class="error">* <?php echo $nameErr;?></span>
+  Title: <input type="text" name="Title" value="">
+  <span class="error">* <?php echo $TitleErr;?></span>
   <br><br>
   Comment: <textarea name="comment" rows="5" cols="40"></textarea>
   <br><br>
@@ -49,10 +49,10 @@ function test_input($data) {
 </form>
 
 <?php
-echo "<h2>Your Input:</h2>";
-echo Name;
+echo "<h2>Your Post:</h2>";
+echo $Title;
 echo "<br>";
-echo Comment;
+echo $Comment;
 echo "<br>";
 ?>
 
