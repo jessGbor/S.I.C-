@@ -7,7 +7,11 @@ def output():
 
 @app.route("/login")
 def login():
-	return render_template('login.html') #home page
+	return render_template('login.html') #login page
+
+@app.route("/about.html")
+def login():
+	return render_template('about.html') #login page
 
 if __name__ == "__main__":
 	app.run(debug = True)
