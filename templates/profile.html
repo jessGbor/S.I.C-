@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" type="text/css" href="static/css/SIC.css">
+  <link rel="stylesheet" type="text/css" href="../static/css/SIC.css">
 </head>
 
 <meta charset="utf-8">
@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<script src="profile.js"></script>
+<script src="../static/js/profile.js" type="text/javascript"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -219,9 +219,10 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
           <h4>It's S.I.C</h4><br>
           <hr class="w3-clear">
           <p>Welcome new members of it's S.I.C. We hope you can share real life experiences and grow from each other.</p>
-          <button id="profile1" onclick="myFunction()" type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i> Like</button>
-
+          <button  onclick="likeFunction()" type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i> Like</button>
+          <p id="profile1"></p>
           <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button>
+
         </div>
         <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
           <img src="Screen Shot 2019-08-05 at 3.06.12 PM.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
@@ -229,8 +230,8 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
           <h4>It's S.I.C</h4><br>
           <hr class="w3-clear">
           <p>Check out the about section for updating creator stories.</p>
-          <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom" ><i class="fa fa-thumbs-up"></i>  Like</button>
-
+          <button onclick="likesFunction()" type="button" class="w3-button w3-theme-d1 w3-margin-bottom" ><i class="fa fa-thumbs-up"></i>  Like</button>
+          <p id="profile2"></p>
 
           <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button>
         </div>
