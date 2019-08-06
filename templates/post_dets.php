@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="post.css">
 <style>
 input[type=text] {
   width: 130px;
@@ -24,12 +23,9 @@ input[type=text]:focus {
   width: 100%;
 }
 
-
-
-
 </style>
   </head>
-  <body>
+  <body style="background-image: url('download-3.jpg')">
 <div>
 <h3>Search for more stories made by users</h3>
 <form>

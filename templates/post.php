@@ -15,7 +15,7 @@
     }
     </style>
   </head>
-<body>
+<body style="background-image: url('download-3.jpg');">
 
   <?php
   // define variables and set to empty values
