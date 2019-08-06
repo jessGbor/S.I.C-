@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="post.css">
 <style>
 input[type=text] {
   width: 130px;
@@ -24,9 +25,7 @@ input[type=text]:focus {
 }
 
 
-body  {
-  background-image: url("download-3.jpg");
-}
+
 
 </style>
   </head>
@@ -35,7 +34,7 @@ body  {
 <h3>Search for more stories made by users</h3>
 <form>
 <input type="text" name="search" placeholder="Search..">
-</form>
+</form action="stories_login.html">
 <h1>Your Story has been published!</p>
   <h3>Share with your friends about your story!</h3>
 
