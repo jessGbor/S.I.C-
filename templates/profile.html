@@ -93,7 +93,6 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
        }
        .row.content {height:auto;}
      }
-
    </style>
 
   <nav class="navbar navbar-inverse">
@@ -111,7 +110,7 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
          <li ><a href="index_login.html">Home</a></li>
          <li class="active"><a href="about_login.html">About</a></li>
          <li><a href="stories_login.html">Stories</a></li>
-         <li><a href="sources_login.html">Sources</a></li>
+         <li><a href="Sources_login.html">Sources</a></li>
 
        </ul>
        <ul class="nav navbar-nav navbar-right">
@@ -219,10 +218,10 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
           <h4>It's S.I.C</h4><br>
           <hr class="w3-clear">
           <p>Welcome new members of it's S.I.C. We hope you can share real life experiences and grow from each other.</p>
-          <button  onclick="likeFunction()" type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i> Like</button>
-          <p id="profile1"></p>
-          <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button>
-
+          <button id="profile1" onclick="likeFunction()" type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i> Like</button>
+          <button onclick="comment2()" type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button>
+          <div id="dropdown2" class="dropdown-content">
+              <input type="text" name="name">
         </div>
         <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
           <img src="Screen Shot 2019-08-05 at 3.06.12 PM.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
@@ -230,67 +229,70 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
           <h4>It's S.I.C</h4><br>
           <hr class="w3-clear">
           <p>Check out the about section for updating creator stories.</p>
-          <button onclick="likesFunction()" type="button" class="w3-button w3-theme-d1 w3-margin-bottom" ><i class="fa fa-thumbs-up"></i>  Like</button>
-          <p id="profile2"></p>
+          <button id="profile2" onclick="likesFunction()" type="button" class="w3-button w3-theme-d1 w3-margin-bottom" ><i class="fa fa-thumbs-up"></i>  Like</button>
 
-          <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button>
+          <button onclick="comment1()" type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button>
+          <div id="dropdown1" class="dropdown-content">
+              <input type="text" name="name">
         </div>
+
 
       <!-- End Middle Column -->
       </div>
 
       <!-- Right Column -->
-      <div class="w3-col m2">
-        <div class="w3-card w3-round w3-white w3-center">
-          <div class="w3-container">
-            <p>Upcoming Events:</p>
-            <img src="download-2.jpg" alt="Forest" style="width:100%;">
-            <p><strong>Holiday</strong></p>
-            <p>Labor Day</p>
-            <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
-          </div>
-        </div>
-        <br>
 
-        <div class="w3-card w3-round w3-white w3-center">
-          <div class="w3-container">
-            <p>Friend Request</p>
-            <img src="Screen Shot 2019-08-05 at 3.06.12 PM.png" alt="Avatar" style="width:50%"><br>
-            <span>It's S.I.C</span>
-            <div class="w3-row w3-opacity">
-              <div class="w3-half">
-                <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
-              </div>
-              <div class="w3-half">
-                <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br>
-
-        <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
-          <p>ADS</p>
-        </div>
-        <br>
-
-        <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
-          <p><i class="fa fa-bug w3-xxlarge"></i></p>
-        </div>
-
-      <!-- End Right Column -->
-      </div>
 
     <!-- End Grid -->
     </div>
 
   <!-- End Page Container -->
   </div>
+  <div class="w3-col m2">
+    <div class="w3-card w3-round w3-white w3-center">
+      <div class="w3-container">
+        <p>Upcoming Events:</p>
+        <img src="download-2.jpg" alt="Forest" style="width:100%;">
+        <p><strong>Holiday</strong></p>
+        <p>Labor Day</p>
+        <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
+      </div>
+    </div>
+    <br>
+
+    <div class="w3-card w3-round w3-white w3-center">
+      <div class="w3-container">
+        <p>Friend Request</p>
+        <img src="Screen Shot 2019-08-05 at 3.06.12 PM.png" alt="Avatar" style="width:50%"><br>
+        <span>It's S.I.C</span>
+        <div class="w3-row w3-opacity">
+          <div class="w3-half">
+            <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
+          </div>
+          <div class="w3-half">
+            <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
+      <p>ADS</p>
+    </div>
+    <br>
+
+    <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
+      <p><i class="fa fa-bug w3-xxlarge"></i></p>
+    </div>
+
+  <!-- End Right Column -->
+  </div>
   <br>
 
   <!-- Footer -->
   <footer class="w3-container w3-theme-d3 w3-padding-16">
-    <h5>Footer</h5>
+    <p>Credit by Cara, Andrea, W3schools, and It's S.I.C</p>
   </footer>
 
   <footer class="w3-container w3-theme-d5">
